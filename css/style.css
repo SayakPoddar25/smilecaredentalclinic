@@ -305,4 +305,27 @@ h1, h2, h3, h4 { color: var(--primary); font-weight: 600; line-height: 1.3; }
     .footer { padding: 40px 0 20px; }
     .footer-logo h2 { font-size: 1.2rem; }
     .footer-social a { width: 35px; height: 35px; margin: 0 5px; }
+
+    /* iOS / iPhone Date & Time Overflow Fix */
+    .modern-form .row {
+        width: 100% !important;
+        flex-direction: column !important; /* ডেট এবং টাইমকে উপর-নিচ করে দেবে */
+    }
+
+    .input-group {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .input-group input, 
+    .input-group select,
+    .input-group input[type="date"],
+    .input-group input[type="time"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        -webkit-box-sizing: border-box !important; /* ખાસ করে Safari-র জন্য */
+        -webkit-appearance: none; /* iOS-এর নিজস্ব স্টাইলিং ওভাররাইড করার জন্য */
+        appearance: none;
+    }
 }
