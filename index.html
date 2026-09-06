@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Care - Dental Clinic</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-tooth"></i>
+                <div class="logo-text">
+                    <h1 id="brand-name">Smile Care Dental Clinic</h1>
+                    <span id="brand-doctor" style=" color: rgb(0, 29, 37);"  >Doctor Name</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#appointment" class="btn btn-primary">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Image Placeholder -->
+    <section class="hero" id="home">
+        <!-- Add your background image url in style.css (.hero class) -->
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <h4 class="badge">Professional Dental Care</h4>
+                <h2>Your Smile,<br><span class="highlight">Our Passion</span></h2>
+                <p id="hero-desc" class="hero-desc">Experience world-class dental treatments with advanced technology.</p>
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn btn-primary btn-large">Book Appointment</a>
+                    <a href="#services" class="btn btn-outline btn-large">Our Services</a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Shape -->
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper reveal">
+                <!-- About Image Placeholder -->
+                <div class="about-image-box">
+                    <img src="img/clinic1.jpeg" alt="doctor" style="width: 100%; max-width: 524px; height: auto; border-radius: 16px;">
+                </div>
+                <div class="experience-badge">
+                    <h3 id="about-degree">BDS, MDS</h3>
+                    <p>Consultant Endodontist</p>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <h4 class="section-subtitle">About Us</h4>
+                <h2 class="section-title">Welcome to Smile Care Dental Clinic</h2>
+                <h3 id="about-doctor-name" class="doctor-name-title">Dr. S. Bhowmick</h3>
+                <p id="about-experience" class="exp-text">Ex-Surgeon, Dr. R. Ahmed Dental College & Hospital</p>
+                <p class="about-desc">We are dedicated to providing the highest quality dental care in a comfortable and modern environment. Our clinic uses state-of-the-art technology to ensure painless and effective treatments.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Advanced Equipment</li>
+                    <li><i class="fas fa-check-circle"></i> Strict Sterilization</li>
+                    <li><i class="fas fa-check-circle"></i> Friendly Environment</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (8 Slots) -->
+    <section class="services section-padding bg-light" id="services">
+        <div class="container">
+            <div class="text-center reveal">
+                <h4 class="section-subtitle">What We Do</h4>
+                <h2 class="section-title">Our Services</h2>
+            </div>
+            <div class="services-grid" id="services-container">
+    
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img src="img/crown-3.jpg" alt="Root Canal Treatment" class="service-thumbnail">
+                    <h4>Root Canal Treatment</h4>
+                    <p>Painless and advanced root canal therapy.</p>
+                    <p class="doctor-name" id="doctor-name">Dr.S.Bhowmick</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img src="img/crown-2.jpg" alt="Tooth Filling" class="service-thumbnail">
+                    <h4>Tooth Filling</h4>
+                    <p>Tooth-colored, durable restorative fillings.</p>
+                    <p class="doctor-name" id="doctor-name">Dr.S.Bhowmick</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img src="img/crown-1.jpg" alt="Crown & Bridge" class="service-thumbnail">
+                    <h4>Crown & Bridge</h4>
+                    <p>Perfect aesthetic match for missing teeth.</p>
+                    <p class="doctor-name" id="doctor-name">Dr.S.Bhowmick</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <img src="img/crown-4.jpeg" alt="Tooth Extractions" class="service-thumbnail">
+                    <h4>Tooth Extractions</h4>
+                    <p>Safe and comfortable tooth removal.</p>
+                    <p class="doctor-name" id="doctor-name">Dr.S.Bhowmick</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <img src="img/crown-5.jpg" alt="Cosmetic Dentistry" class="service-thumbnail">
+                    <h4>Cosmetic Dentistry</h4>
+                    <p>Advanced procedures to enhance your smile.</p>
+                    <p class="doctor-name" id="doctor-name">Dr.S.Bhowmick</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <img src="img/crown-6.jpg" alt="Smile Designing" class="service-thumbnail">
+                    <h4>Smile Designing</h4>
+                    <p>Custom treatments for a confident smile.</p>
+                    <p class="doctor-name" id="doctor-name">Dr.S.Bhowmick</p>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="service-card">
+                    <img src="img/crown-7.jpg" alt="Tooth Whitening" class="service-thumbnail">
+                    <h4>Tooth Whitening</h4>
+                    <p>Professional bleaching for brighter teeth.</p>
+                    <p class="doctor-name" id="doctor-name">Dr.S.Bhowmick</p>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card">
+                    <img src="img/crown-8.jpeg" alt="Dentures" class="service-thumbnail">
+                    <h4>Dentures</h4>
+                    <p>Natural-looking removable artificial teeth.</p>
+                    <p class="doctor-name" id="doctor-name">Dr.S.Bhowmick</p>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="text-center reveal">
+                <h4 class="section-subtitle">Clinic Tour</h4>
+                <h2 class="section-title">Our Gallery</h2>
+            </div>
+            <div class="gallery-grid reveal">
+                <!-- 6 Gallery Image Placeholders -->
+                <div class="gallery-box"><img src="img/clini2.jpg" alt="clinic"></div>
+                <div class="gallery-box"><img src="img/clinic3.jpg" alt="clinic"></div>
+                <div class="gallery-box"><img src="img/clinic4.jpg" alt="clinic"></div>
+                <div class="gallery-box"><img src="img/clinic5.jpg" alt="clinic"></div>
+                <div class="gallery-box"><img src="img/clinic6.jpg" alt="clinic"></div>
+                <div class="gallery-box"><img src="img/clinic7.jpg" alt="clinic"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Contact Section -->
+    <section class="contact section-padding bg-light" id="contact">
+        <div class="container contact-grid">
+            
+            <!-- Information / Visit Us -->
+            <div class="contact-info reveal">
+                <h4 class="section-subtitle">Visit Us</h4>
+                <h2 class="section-title">Clinic Locations</h2>
+                <h3>Phone Number: 9647454839/9641035914</h3>
+                <div id="chambers-container" class="chambers-wrapper">
+                    <!-- Dynamically populated chambers -->
+                </div>
+                <div class="map-box" style="width: 100%; height: 300px; border-radius: 8px; overflow: hidden; margin-top: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <iframe 
+                        src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.18318896090062!2d88.39143046346146!3d22.619050809503673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d20138e1135%3A0xe566d9be0ee2b3cc!2sSMILE%20CARE%20DENTAL%20CLINIC%2C%20Dumdum!5e0!3m2!1sen!2sin!4v1788614450021!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="form-wrapper reveal" id="appointment">
+                <h2 class="form-title">Book an Appointment</h2>
+                <p class="form-subtitle">Fill out the form and we will confirm your visit.</p>
+                
+                <form id="appointmentForm" class="modern-form">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" required placeholder="+91 xxxxx xxxxx">
+                    </div>
+                    <div class="row">
+                        <div class="input-group col">
+                            <label>Date</label>
+                            <input type="date" name="date" required>
+                        </div>
+                        <div class="input-group col">
+                            <label>Time</label>
+                            <input type="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Select Chamber</label>
+                        <select name="chamber" id="form-chamber-select" required>
+                            <option value="" disabled selected>Choose Clinic Location...</option>
+                            <option value="Kankurgachi Chamber">Kankurgachi Chamber</option>
+                            <option value="Dum Dum Chamber">Dum Dum Chamber</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn btn-primary btn-full">Confirm Booking</button>
+                    <div id="form-message" class="msg-box"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>Smile Care Dental Clinic</h2>
+                <p>Your trusted dental partner.</p>
+            </div>
+            <div class="footer-social">
+                <!-- ফেসবুক পেজ বা প্রোফাইলের লিংক -->
+                <a href="tel:+919641035914"><i class="fas fa-phone-alt"></i></a>
+                
+                <!-- ইনস্টাগ্রাম প্রোফাইলের লিংক -->
+                <a href="https://www.instagram.com/dr.sadhan.bhowmick?igsi=YTRldmJrNmljd3p0" target="_blank"><i class="fab fa-instagram"></i></a>
+                
+                <!-- হোয়াটসঅ্যাপ নাম্বার (কান্ট্রি কোড 91 সহ) -->
+                <a href="https://wa.me/919647454839" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Smile Care Dental Clinic. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts (Order is important) -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
