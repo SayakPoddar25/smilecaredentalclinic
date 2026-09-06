@@ -332,7 +332,7 @@ h1, h2, h3, h4 { color: var(--primary); font-weight: 600; line-height: 1.3; }
         box-sizing: border-box !important;
         -webkit-box-sizing: border-box !important;
         font-size: 16px !important; /* আইফোনে অটো-জুম হওয়া আটকাবে */
-        padding: 14px 15px !important; /* আপনার অরিজিনাল বক্সের সাইজ */
+        padding: 10px 15px !important; /* আপনার অরিজিনাল বক্সের সাইজ */
         display: block !important;
     }
 }
