@@ -296,9 +296,7 @@ h1, h2, h3, h4 { color: var(--primary); font-weight: 600; line-height: 1.3; }
     .contact-info { text-align: center; }
     .form-wrapper { padding: 25px 15px; }
     .form-title { font-size: 1.5rem; }
-    .modern-form .row { flex-direction: column; gap: 0; }
-    .input-group { margin-bottom: 15px; }
-    .input-group input, .input-group select { padding: 12px; font-size: 0.95rem; }
+
     .map-box { height: 250px; margin-top: 20px; }
 
     /* ফুটার সেকশন */
@@ -306,33 +304,40 @@ h1, h2, h3, h4 { color: var(--primary); font-weight: 600; line-height: 1.3; }
     .footer-logo h2 { font-size: 1.2rem; }
     .footer-social a { width: 35px; height: 35px; margin: 0 5px; }
 
-    /* iOS / iPhone Date & Time Overflow Fix */
-    /* iOS / iPhone Form Overflow Fix */
+    /* iOS Mobile Form Overflow & Size Fix */
     .modern-form .row {
-        display: block !important; 
+        display: flex !important;
+        flex-direction: column !important;
         width: 100% !important;
-        margin: 0 !important; 
+        margin: 0 !important;
+        gap: 0 !important;
     }
 
     .modern-form .col {
         width: 100% !important;
-        display: block !important;
-        margin-bottom: 20px !important; 
     }
 
     .input-group {
         width: 100% !important;
+        margin-bottom: 15px !important; /* আপনার অরিজিনাল গ্যাপ */
         box-sizing: border-box !important;
     }
 
     .input-group input, 
-    .input-group select {
+    .input-group select,
+    .input-group input[type="date"],
+    .input-group input[type="time"] {
         width: 100% !important;
-        min-width: 0 !important; 
+        max-width: 100% !important;
         box-sizing: border-box !important;
         -webkit-box-sizing: border-box !important;
-        font-size: 16px !important; /* আইফোনে অটো-জুম হওয়া আটকাবে */
-        padding: 10px 15px !important; /* আপনার অরিজিনাল বক্সের সাইজ */
-        display: block !important;
+        -webkit-appearance: none !important; /* iOS এর ডিফল্ট স্টাইল মুছবে */
+        appearance: none !important;
+        
+        /* আপনার দেওয়া একদম অরিজিনাল সাইজ */
+        padding: 12px !important; 
+        font-size: 0.95rem !important; 
+        
+        height: auto !important; /* বক্সকে চ্যাপ্টা হতে দেবে না */
     }
 }
